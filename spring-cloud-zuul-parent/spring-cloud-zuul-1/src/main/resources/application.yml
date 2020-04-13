@@ -1,0 +1,43 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: springcloud-zuul-gateway
+eureka:
+  client:
+    region: region1
+    availability-zones:
+      region1: region1-zone1,region1-zone2,region1-zone3
+    service-url:
+      region1-zone1: http://root:admin@eureka1:8001/eureka/
+      region1-zone2: http://root:admin@eureka2:8002/eureka/
+      region1-zone3: http://root:admin@eureka3:8003/eureka/
+    prefer-same-zone-eureka: true
+  instance:
+    prefer-ip-address: true
+    metadata-map.zone: region1-zone1
+
+zuul:
+  retryable: false # 关闭Hystrix重试机制  全局。也可以单个服务
+  sensitiveHeaders: #全局设置
+  #ignoredHeaders: X-ABC  向下游传递敏感信息 X-ABC  重定向 之后就没有  全局设置
+  add-host-header: true #防止页面重定向后跳转到上游服务器上去
+  prefix: /hiteam    # 加上前缀
+  ignored-services: "*"  # 关闭服务名可访问   " * "  可关闭所有的服务原名访问  （引号必须有）
+  routes:
+    #springcloud-config-client: /sll/**  #服务的映射地址
+    springcloud-config-client:
+      path: /sll/**
+      serviceId: springcloud-config-client
+      #sensitiveHeaders:   #向下游传递敏感信息    某个服务设置   空值全部传递。 写上的不往下游传递
+    local:
+      path: /local/**
+      url: forward:/name  #本地跳转  重定向   访问local 路径 跳转到local
+  ignored-patterns: /*-provider-*/**   #过滤符合条件的uri
+
+
+  #通配符	含义	举例	解释
+  #?    匹配任意单个字符	/feign-consumer/?	匹配/feign-consumer/a,/feign-consumer/b,/feign-consumer/c等
+  #*    匹配任意数量的字符	/feign-consumer/*	匹配/feign-consumer/aaa,feign-consumer/bbb,/feign-consumer/ccc等，无法匹配/feign-consumer/a/b/c
+  #**    匹配任意数量的字符	/feign-consumer/*	匹配/feign-consumer/aaa,feign-consumer/bbb,/feign-consumer/ccc等，也可以匹配/feign-consumer/a/b/c
+

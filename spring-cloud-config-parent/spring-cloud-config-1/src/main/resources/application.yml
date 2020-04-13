@@ -1,0 +1,49 @@
+spring:
+  application:
+    name: springcloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          #����git�ֿ��ַ
+          uri: https://github.com/shilululiu/coding-farmer-config-center
+          #���òֿ�·��
+          search-paths: test
+          #����git�ֿ���û���
+          username: 17629581571@163.com
+          #����git�ֿ������
+          password: 2056096324sll
+          #��������ͨ��git��Զ��git�⣬��ʱ���صĿ�������Ⱦ��
+          #��ʱ���������޷���Զ�̿���±�������,����force-pull=true����ǿ�ƴ�Զ�̿��и��±��ؿ�
+          force-pull: true
+          #Ĭ�ϴ�git�ֿ��¡���ص���C:/Users/<��ǰ�û�>/AppData/Local/Temp
+          #basedir: D:/ex
+server:
+  port: 8201
+  rabbitmq:
+    host: localhost  # mq的ip地址
+    port: 15672 # mq的端口
+    password: guest # mq的用户密码
+    username: guest # mq的用户名
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
+
+
+eureka:
+  client:
+    region: region1
+    availability-zones:
+      region1: region1-zone1,region1-zone2,region1-zone3
+    service-url:
+      region1-zone1: http://root:admin@eureka1:8001/eureka/
+      region1-zone2: http://root:admin@eureka2:8002/eureka/
+      region1-zone3: http://root:admin@eureka3:8003/eureka/
+    prefer-same-zone-eureka: true
+  instance:
+    prefer-ip-address: true
+    metadata-map.zone: region1-zone1

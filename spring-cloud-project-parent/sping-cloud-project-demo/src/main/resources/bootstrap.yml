@@ -1,0 +1,28 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8201
+      #discovery:
+        #enabled: true #启用服务发现
+        #serviceId: springcloud-config-server #指定要从eureka获取的config server的服务ID（即：configserverr的applicationName）
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh #暴露出bus-refresh节点
+
+
+eureka:
+  client:
+    region: region1
+    availability-zones:
+      region1: region1-zone1,region1-zone2,region1-zone3
+    service-url:
+      region1-zone1: http://root:admin@eureka1:8001/eureka/
+      region1-zone2: http://root:admin@eureka2:8002/eureka/
+      region1-zone3: http://root:admin@eureka3:8003/eureka/
+    prefer-same-zone-eureka: true
+  instance:
+    prefer-ip-address: true
+    metadata-map.zone: region1-zone1

@@ -1,0 +1,48 @@
+server:
+  port: 8240
+  rabbitmq:  #配置 中间件   可以 kafka
+    host: localhost  # mq的ip地址
+    port: 15672 # mq的端口
+    password: guest # mq的用户密码
+    username: guest # mq的用户名
+spring:
+  application:
+    name: zipkin-server
+  sleuth:
+    enabled: false  #表示当前程序不使用sleuth
+
+
+
+#配置kafka
+#spring:
+#  sleuth:
+#    enabled: false
+#    sampler:
+#      percentage: 1.0
+#  cloud:
+ #   stream:
+#      kafka:
+#        binder:
+ #         brokers: localhost:9092
+ #         zkNodes: localhost:2181
+
+
+  #ES配置
+zipkin:
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      host: localhost:9200
+      cluster: elasticsearch
+      index: zipkin
+      index-shards: 1
+      index-replicas: 1
+
+
+
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false

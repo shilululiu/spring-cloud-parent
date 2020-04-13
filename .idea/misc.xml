@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring-cloud-eureka-parent" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-cloud-project" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-cloud-zuul-parent" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-parent/spring-cloud-eureka-1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-parent/spring-cloud-eureka-2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-parent/spring-cloud-eureka-3/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-parent/spring-cloud-config-1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-parent/spring-cloud-config-2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-parent/spring-cloud-config-3/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-parent/spring-cloud-zuul-1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-parent/spring-cloud-zuul-2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-parent/spring-cloud-zuul-3/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zipkin-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zipkin-parent/spring-cloud-zipkin-1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-hystrix-dashboard-parent/spring-cloud-hystrix-dashboard-1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ddd/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-eureka-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-sleuth-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul-parent/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

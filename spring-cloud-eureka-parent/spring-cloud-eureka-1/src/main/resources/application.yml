@@ -1,0 +1,45 @@
+spring:
+  application:
+    name: register-center
+  security:
+    basic:
+      enabled: true # ����basic��֤
+    user:
+      name: root # �û���
+      password: admin # ����
+eureka:
+  instance:
+    prefer-ip-address: false
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 5
+  server:
+    enable-self-preservation: true
+    eviction-interval-timer-in-ms: 5000
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    region: region1
+    availability-zones:
+      region1: region1-zone1,region1-zone2,region1-zone3
+    service-url:
+      region1-zone1: http://root:admin@eureka1:8001/eureka/
+      region1-zone2: http://root:admin@eureka2:8002/eureka/
+      region1-zone3: http://root:admin@eureka3:8003/eureka/
+      #  defaultZone: http://rc1:8761/eureka/, http://rc2:8762/eureka/
+
+
+logging.level.com.netflix:
+  eureka: OFF
+  discovery: OFF
+  profiles: eureka1
+
+server:
+  port: 8001
+eureka.instance.hostname: eureka1
+
+
+
+
+
+
