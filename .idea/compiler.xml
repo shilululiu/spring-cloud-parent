@@ -11,6 +11,10 @@
         <module name="spring-cloud-config-2" />
         <module name="spring-cloud-config-3" />
         <module name="spring-cloud-config-parent" />
+        <module name="spring-cloud-demo" />
+        <module name="spring-cloud-demo-api" />
+        <module name="spring-cloud-demo2" />
+        <module name="spring-cloud-demo2-api" />
         <module name="spring-cloud-eureka-1" />
         <module name="spring-cloud-eureka-2" />
         <module name="spring-cloud-eureka-3" />
@@ -30,10 +34,8 @@
     <bytecodeTargetLevel>
       <module name="ddd" target="1.8" />
       <module name="spring-cloud-config" target="1.8" />
-      <module name="spring-cloud-demo" target="1.8" />
       <module name="spring-cloud-demo (1)" target="1.8" />
       <module name="spring-cloud-demo1" target="1.8" />
-      <module name="spring-cloud-demo2" target="1.8" />
       <module name="spring-cloud-demo2 (1)" target="1.8" />
       <module name="spring-cloud-eureka-parent" target="1.8" />
       <module name="spring-cloud-project" target="1.8" />
@@ -54,9 +56,11 @@
       <module name="spring-cloud-config-3" options="-parameters" />
       <module name="spring-cloud-demo" options="-parameters" />
       <module name="spring-cloud-demo (1)" options="-parameters" />
+      <module name="spring-cloud-demo-api" options="-parameters" />
       <module name="spring-cloud-demo1" options="-parameters" />
       <module name="spring-cloud-demo2" options="-parameters" />
       <module name="spring-cloud-demo2 (1)" options="-parameters" />
+      <module name="spring-cloud-demo2-api" options="-parameters" />
       <module name="spring-cloud-eureka-1" options="-parameters" />
       <module name="spring-cloud-eureka-2" options="-parameters" />
       <module name="spring-cloud-eureka-3" options="-parameters" />

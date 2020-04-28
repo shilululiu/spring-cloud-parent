@@ -26,6 +26,10 @@
         <option value="$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo/spring-cloud-demo-api/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo/spring-cloud-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2/spring-cloud-demo2-api/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2/spring-cloud-demo2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -29,6 +29,13 @@ spring:
 
   #ES配置
 zipkin:
+  collector:
+    rabbitmq:  #配置 中间件   可以 kafka
+      host: localhost  # mq的ip地址
+      port: 15672 # mq的端口
+      password: guest # mq的用户密码
+      username: guest # mq的用户名
+      queue: zipkin
   storage:
     type: elasticsearch
     elasticsearch:
@@ -39,7 +46,19 @@ zipkin:
       index-replicas: 1
 
 
-
+eureka:
+  client:
+    region: region1
+    availability-zones:
+      region1: region1-zone1,region1-zone2,region1-zone3
+    service-url:
+      region1-zone1: http://root:admin@eureka1:8001/eureka/
+      region1-zone2: http://root:admin@eureka2:8002/eureka/
+      region1-zone3: http://root:admin@eureka3:8003/eureka/
+    prefer-same-zone-eureka: true
+  instance:
+    prefer-ip-address: true
+    metadata-map.zone: region1-zone1
 
 management:
   metrics:

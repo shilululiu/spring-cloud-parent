@@ -11,18 +11,13 @@
     <file url="file://$PROJECT_DIR$/spring-cloud-eureka-parent/spring-cloud-eureka-3" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-hystrix-dashboard-parent/spring-cloud-hystrix-dashboard-1" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-demo2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo/spring-cloud-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo/spring-cloud-demo-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project/spring-cloud-demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project/spring-cloud-demo/src/main/resources/application.yml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project/spring-cloud-demo/src/main/resources/bootstrap.yml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project/spring-cloud-demo2" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project/spring-cloud-demo2/src/main/resources/application.yml" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-project/spring-cloud-demo2/src/main/resources/bootstrap.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2/spring-cloud-demo2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2/spring-cloud-demo2-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-zipkin-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-zipkin-parent/spring-cloud-zipkin-1" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-zipkin-parent/spring-cloud-zipkin-1/src/main/resources/application.yml" charset="UTF-8" />
