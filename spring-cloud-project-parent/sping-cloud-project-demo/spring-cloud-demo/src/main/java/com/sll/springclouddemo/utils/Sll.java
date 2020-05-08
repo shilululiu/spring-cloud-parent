@@ -1,6 +1,10 @@
 package com.sll.springclouddemo.utils;
 
+import ch.qos.logback.core.net.SyslogOutputStream;
+import com.google.common.base.Function;
+import com.google.common.base.Supplier;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
+import com.rabbitmq.client.UnblockedCallback;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -9,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -26,6 +32,12 @@ public class Sll {
 
     @Autowired
     HelloService helloService;
+
+
+    public  static  int get(){
+        return 4 ;
+    }
+
 
 
     @RequestMapping("/test8")
@@ -47,5 +59,64 @@ public class Sll {
         System.out.println("b4>>>"+b4);
         context.close();
     }
+
+    public static void test(){
+
+        System.out.println(Thread.currentThread().getName());
+        System.out.println("iii");
+    }
+
+    @FunctionalInterface
+    interface AInterface {
+        int xxx(int i, int j);
+    }
+
+
+    public static void main(String[] args) {
+
+
+     /*   List<Integer> list = Arrays.asList(0,1,2,3,4,5);
+        list.stream().map((x) -> x*x).forEach(System.out::println);*/
+
+        List  list = new ArrayList();
+        list.add("33");
+        list.add("33");
+        list.add("33");
+        list.add("33");
+        list.forEach(System.out::println);
+
+
+
+
+
+      /*  AInterface aInterface = (int i,int j)->{
+           System.out.println(i+j);
+           return i+j;
+       };
+*/
+
+
+
+
+/*
+        new Thread(()->{Sll.test();},"a").start();
+
+        new Thread(()->{Sll.test();},"b").start();
+
+        new Thread(()->{Sll.test();},"c").start();
+
+        List  list = new ArrayList();
+        list.add("33");
+        list.add("33");
+        list.add("33");
+        list.add("33");
+        list.forEach((s)->{
+            System.out.println(s);
+        });*/
+
+
+
+    }
+
 
 }
