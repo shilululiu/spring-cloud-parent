@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-cloud-kafka-consumer
+server:
+  port: 2345

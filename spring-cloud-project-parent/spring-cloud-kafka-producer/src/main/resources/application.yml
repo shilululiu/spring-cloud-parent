@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: spring-cloud-kafka-producer
+server:
+  port: 2346
+
