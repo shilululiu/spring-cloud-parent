@@ -32,6 +32,7 @@
         <option value="$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2/spring-cloud-demo2/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-kafka-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-kafka-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-kafka-consumer-streams/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

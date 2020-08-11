@@ -1,22 +1,12 @@
 package com.sll.springclouddemo2api.api;
 
-
-
-
+import com.sll.springclouddemo2api.feignclientbuilder.TestControllerApiF;
 import org.springframework.cloud.openfeign.FeignClient;
 
-import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-
-
-
-
-@FeignClient("SPRINGCLOUD-DEMO2")
+@FeignClient(value = "SPRINGCLOUD-DEMO2",fallback = TestControllerApiF.class  )
 public interface TestControllerApi {
 
-  @RequestMapping(value = "/test",method = RequestMethod.GET)
+  //@RequestMapping(value = "/test",method = RequestMethod.GET)
   String test();
-
 
 }

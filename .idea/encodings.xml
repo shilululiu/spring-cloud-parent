@@ -16,6 +16,7 @@
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo/spring-cloud-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/sping-cloud-project-demo/spring-cloud-demo-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-kafka-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-kafka-consumer-streams" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-kafka-producer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-project-parent/spring-cloud-project-demo2/spring-cloud-demo2" charset="UTF-8" />

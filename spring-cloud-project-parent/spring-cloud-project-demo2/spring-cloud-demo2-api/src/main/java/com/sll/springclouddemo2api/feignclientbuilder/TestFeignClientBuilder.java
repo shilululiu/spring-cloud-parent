@@ -13,19 +13,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class TestFeignClientBuilder  {
-
-
-
-
     @Bean
     @LoadBalanced
     public TestControllerApi  get(){
-
         FeignClientsConfiguration feignClientsConfiguration = new FeignClientsConfiguration();
-
-
         return  Feign.builder().contract(new SpringMvcContract()).target(TestControllerApi.class,"http://SPRINGCLOUD-DEMO2");
     }
-
-
 }

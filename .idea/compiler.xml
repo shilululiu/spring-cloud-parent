@@ -22,6 +22,7 @@
         <module name="spring-cloud-hystrix-dashboard-1" />
         <module name="spring-cloud-hystrix-dashboard-parent" />
         <module name="spring-cloud-kafka-consumer" />
+        <module name="spring-cloud-kafka-consumer-streams" />
         <module name="spring-cloud-kafka-producer" />
         <module name="spring-cloud-project-demo2" />
         <module name="spring-cloud-project-parent" />
@@ -70,6 +71,7 @@
       <module name="spring-cloud-hystrix-dashboard-1" options="-parameters" />
       <module name="spring-cloud-hystrix-dashboard-parent" options="-parameters" />
       <module name="spring-cloud-kafka-consumer" options="-parameters" />
+      <module name="spring-cloud-kafka-consumer-streams" options="-parameters" />
       <module name="spring-cloud-kafka-producer" options="-parameters" />
       <module name="spring-cloud-project" options="-parameters" />
       <module name="spring-cloud-project-demo2" options="-parameters" />

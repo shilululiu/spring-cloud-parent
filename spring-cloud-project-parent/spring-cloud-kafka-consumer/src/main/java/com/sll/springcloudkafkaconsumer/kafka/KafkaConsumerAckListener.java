@@ -2,6 +2,7 @@ package com.sll.springcloudkafkaconsumer.kafka;
 
 
 
+
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.IntegerDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -88,6 +89,19 @@ public class KafkaConsumerAckListener {
             consumer.seek(new TopicPartition("topic.quick.ack",record.partition()),record.offset() );
         }
     }*/
+
+
+   /* @KafkaListener(groupId = "consumerGroup4",topics = "sync")
+    public void consume4(ConsumerRecords<Object,String> consumerRecords, Acknowledgment acknowledgment){
+        for(TopicPartition topicPartition:consumerRecords.partitions()){
+            for(ConsumerRecord<Object,String> consumerRecord:consumerRecords.records(topicPartition)){
+                System.out.println("消费时间："+System.currentTimeMillis()+" "+consumerRecord.value());
+            }
+            acknowledgment.acknowledge();
+        }
+    }
+*/
+
 
 
 
